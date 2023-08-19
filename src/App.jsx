@@ -1,8 +1,8 @@
 import './App.css';
 import { AboutMe } from './components/AboutMe';
 import { HeaderWidget } from './components/HeaderWidget';
-import { MainSection } from './components/MainSection';
-import { SideSection } from './components/SideSection';
+import { MainSection } from './components/main_section/MainSection';
+import { SideSection } from './components/side_section/SideSection';
 
 import resume from '../resume.json';
 
@@ -14,7 +14,12 @@ function App() {
       {/* Main section with a Grid 2 1 */}
       <div className='grid grid-cols-3 gap-10'>
         <MainSection workExperience={resume.work} />
-        <SideSection />
+        <SideSection
+          contacts={resume.contacts}
+          programming={resume.programming_languages}
+          frameworks={resume.frameworks}
+          tools={resume.tools}
+        />
       </div>
     </div>
   );

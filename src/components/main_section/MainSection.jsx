@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Experience } from './Experience';
+import { Experience } from './widgets/Experience';
 
 export const MainSection = ({ workExperience }) => {
   return (

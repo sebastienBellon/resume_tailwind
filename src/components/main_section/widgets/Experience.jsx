@@ -39,7 +39,7 @@ const ExperienceEntry = (props) => {
         </div>
       </header>
 
-      <content className='grid pt-6'>
+      <div className='grid pt-6'>
         <ul>
           {props.highlights.map((item, index) => (
             <div key={index} className='px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
@@ -50,7 +50,7 @@ const ExperienceEntry = (props) => {
             </div>
           ))}
         </ul>
-      </content>
+      </div>
     </>
   );
 };
