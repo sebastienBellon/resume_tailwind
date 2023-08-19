@@ -19,6 +19,10 @@ function App() {
           programming={resume.programming_languages}
           frameworks={resume.frameworks}
           tools={resume.tools}
+          strengths={resume.strengths}
+          education={resume.education}
+          languages={resume.languages}
+          side_projects={resume.side_projects}
         />
       </div>
     </div>

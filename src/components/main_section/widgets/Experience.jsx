@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const Experience = ({ content }) => {
   return (
-    <section className='col-span-3 mt-6 first:mt-0' id='experience'>
+    <section className='col-span-3' id='experience'>
       <Title />
       {content.map((item, index) => (
         <ExperienceEntry
@@ -24,26 +24,23 @@ Experience.propTypes = {
 
 const ExperienceEntry = (props) => {
   return (
-    <>
+    <div className='mt-6'>
       <header className='flex flex-row justify-between'>
-        <div className='leading-normal text-sm text-gray-700 mt-1'>
+        <div className='leading-normal text-lg font-semibold text-gray-700 '>
           {props.startDate} – {props.endDate}
         </div>
         <div>
           <h3 className='text-lg font-semibold text-gray-700 leading-snugish'>
-            {props.jobTitle}{' '}
-            <span id='company-name' className='text-gray-550 font-semibold'>
-              @ {props.companyName}
-            </span>
+            {props.jobTitle} <span className='text-gray-550 font-semibold'>@ {props.companyName}</span>
           </h3>
         </div>
       </header>
 
-      <div className='grid pt-6'>
+      <div className='grid pt-2'>
         <ul>
           {props.highlights.map((item, index) => (
             <div key={index} className='px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
-              <dt className='text-sm font-medium leading-6 text-gray-900 text-start'>{item.title}</dt>
+              <dt className='text-sm font-medium leading-6 text-gray-800 text-start'>{item.title}</dt>
               <dd className='mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 text-justify'>
                 {item.content}
               </dd>
@@ -51,7 +48,7 @@ const ExperienceEntry = (props) => {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
