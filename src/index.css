@@ -5,11 +5,17 @@
 
 @screen print {
   @page {
-    size: 21cm 29.7cm;
-    margin-top: 0in;
-    margin-bottom: 0in;
-    margin-left: 0in;
-    margin-right: 0in;
+    size: A4;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+  }
+
+  @media print {
+    html,
+    body {
+      width: 21cm;
+      height: 29.7cm;
+    }
   }
 
   body {

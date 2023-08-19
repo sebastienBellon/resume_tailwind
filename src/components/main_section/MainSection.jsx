@@ -3,7 +3,7 @@ import { Experience } from './widgets/Experience';
 
 export const MainSection = ({ workExperience }) => {
   return (
-    <section className='print:col-span-2 col-span-3 md:col-span-2 mt-8 first:mt-0'>
+    <section className='col-span-2'>
       <Experience content={workExperience} />
     </section>
   );

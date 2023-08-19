@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const Experience = ({ content }) => {
   return (
-    <section className='col-span-3' id='experience'>
+    <section className='col-span-3'>
       <Title />
       {content.map((item, index) => (
         <ExperienceEntry
@@ -25,27 +25,22 @@ Experience.propTypes = {
 const ExperienceEntry = (props) => {
   return (
     <div className='mt-6'>
-      <header className='flex flex-row justify-between'>
-        <div className='leading-normal text-lg font-semibold text-gray-700 '>
+      <header className='py-2 grid grid-cols-4 gap-4 text-lg font-semibold text-gray-700'>
+        <div className='text-end'>
           {props.startDate} – {props.endDate}
         </div>
-        <div>
-          <h3 className='text-lg font-semibold text-gray-700 leading-snugish'>
-            {props.jobTitle} <span className='text-gray-550 font-semibold'>@ {props.companyName}</span>
-          </h3>
-        </div>
+
+        <h3 className='text-end col-span-3'>
+          {props.jobTitle} <span className='text-gray-550'>@ {props.companyName}</span>
+        </h3>
       </header>
 
-      <div className='grid pt-2'>
-        <ul>
-          {props.highlights.map((item, index) => (
-            <div key={index} className='py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
-              <dt className='text-sm font-medium text-gray-800 text-start'>{item.title}</dt>
-              <dd className='mt-1 text-sm  text-gray-700 sm:col-span-2 sm:mt-0 text-justify'>{item.content}</dd>
-            </div>
-          ))}
-        </ul>
-      </div>
+      {props.highlights.map((item, index) => (
+        <div key={index} className='py-2 text-sm grid grid-cols-4 gap-4 break-inside-avoid-page'>
+          <dt className='font-medium text-gray-800 text-end'>{item.title}</dt>
+          <dd className=' text-gray-700 text-justify col-span-3'>{item.content}</dd>
+        </div>
+      ))}
     </div>
   );
 };

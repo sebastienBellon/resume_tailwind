@@ -16,7 +16,7 @@ export const SideSection = ({
   side_projects,
 }) => {
   return (
-    <section className='col-span-1 md:col-span-1'>
+    <section className='col-span-1'>
       <Skills programming={programming} frameworks={frameworks} tools={tools} strengths={strengths} />
       <Education education={education} />
       <Languages languages={languages} />

@@ -6,7 +6,7 @@ import { IoMailOpen } from 'react-icons/io5';
 
 export const Contact = ({ contacts }) => {
   return (
-    <section className='col-span-1 mt-8 first:mt-0'>
+    <section className='col-span-1 mt-8 first:mt-0 break-inside-avoid-page'>
       <header className='flex flex-row items-center mb-5 border-b border-opacity-50 border-gray-400'>
         <h2 className='font-bold tracking-widest text-sm2 text-indigo-700'>CONTACT</h2>
       </header>
@@ -32,9 +32,9 @@ Contact.propTypes = {
 
 const ContactSection = ({ icon, content }) => {
   return (
-    <div className='px-4 pb-2 sm:grid sm:grid-cols-6'>
+    <div className='lg:px-4 px-0 pb-0 sm:pb-2 grid grid-cols-6 '>
       {icon}
-      <div className='text-sm text-gray-700 col-span-5 sm:mt-0 text-start'>{content}</div>
+      <div className='text-sm text-gray-700 col-span-5 text-start'>{content}</div>
     </div>
   );
 };
@@ -62,9 +62,9 @@ const LinkSection = ({ icon, link, isMail, isPhone }) => {
   }
 
   return (
-    <div className='px-4 pb-2 sm:grid sm:grid-cols-6'>
+    <div className='lg:px-4 px-0 pb-0 sm:pb-2 grid grid-cols-6'>
       {icon}
-      <div className='text-sm text-gray-700 col-span-5 sm:mt-0 text-start'>
+      <div className='text-sm text-gray-700 col-span-5 text-start'>
         <a href={href} className='text-sm leading-normal text-gray-700'>
           {displayLink}
         </a>
@@ -82,9 +82,9 @@ LinkSection.propTypes = {
 
 const AddressSection = ({ icon, address, city }) => {
   return (
-    <div className='px-4 pb-2 sm:grid sm:grid-cols-6'>
+    <div className='lg:px-4 px-0 pb-0 sm:pb-2 grid grid-cols-6'>
       {icon}
-      <div className='text-sm text-gray-700 col-span-5 sm:mt-0 text-start'>
+      <div className='text-sm text-gray-700 col-span-5 text-start'>
         <dd>{address}</dd>
         <dd>{city}</dd>
       </div>

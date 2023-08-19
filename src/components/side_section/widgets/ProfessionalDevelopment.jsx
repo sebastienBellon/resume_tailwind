@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const ProfessionalDevelopment = ({ side_projects }) => {
   return (
-    <section className='col-span-1 mt-8 first:mt-0'>
+    <section className='col-span-1 mt-8 first:mt-0 break-inside-avoid-page'>
       <header className='flex flex-row items-center mb-4 border-b border-opacity-50 border-gray-400'>
         <h2 className='font-bold tracking-widest text-sm2 text-indigo-700'>TECHNICAL PROJECTS</h2>
       </header>
