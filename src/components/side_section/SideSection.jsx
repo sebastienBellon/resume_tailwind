@@ -17,11 +17,11 @@ export const SideSection = ({
 }) => {
   return (
     <section className='col-span-1 md:col-span-1'>
-      <Contact contacts={contacts} />
       <Skills programming={programming} frameworks={frameworks} tools={tools} strengths={strengths} />
       <Education education={education} />
       <Languages languages={languages} />
       <ProfessionalDevelopment side_projects={side_projects} />
+      <Contact contacts={contacts} />
     </section>
   );
 };

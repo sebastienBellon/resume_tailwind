@@ -4,7 +4,7 @@ export const Education = ({ education }) => {
   return (
     <section className='col-span-1 mt-8 first:mt-0'>
       <header className='flex flex-row items-center mb-4 border-b border-opacity-50 border-gray-400'>
-        <h2 className='font-bold tracking-widest text-sm2 text-indigo-700'>EDUCATIONS</h2>
+        <h2 className='font-bold tracking-widest text-sm2 text-indigo-700'>EDUCATION</h2>
       </header>
 
       {education.map((item, index) => (

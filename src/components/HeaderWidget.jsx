@@ -26,8 +26,8 @@ const Logo = ({ name }) => {
 
   return (
     <div className='initials-container mr-5 text-base leading-none pb-3 pt-3 text-white bg-indigo-800 font-medium px-3'>
-      <div className='initial text-center text-2xl pb-1'>{initials[0]}</div>
-      <div className='text-center text-2xl initial'>{initials[1]}</div>
+      <div className='initial text-center text-2xl print:text-xl pb-1'>{initials[0]}</div>
+      <div className='text-center text-2xl print:text-xl initial'>{initials[1]}</div>
     </div>
   );
 };
@@ -37,7 +37,7 @@ Logo.propTypes = {
 
 const Name = ({ name }) => {
   return (
-    <h1 className='print:text-6xl lg:text-6xl md:text-5xl mr-auto text-3xl font-semibold text-gray-750 pb-px'>
+    <h1 className='print:text-4xl lg:text-6xl md:text-5xl mr-auto text-3xl font-semibold text-gray-750 pb-px'>
       {name}
     </h1>
   );
@@ -48,9 +48,9 @@ Name.propTypes = {
 
 const Title = ({ label }) => {
   return (
-    <h2 className='print:text-3xl text-indigo-700 font-sans self-center md:text-3xl text-2xl font-hairline pb-px'>
+    <h2 className='print:text-2xl text-indigo-700 font-sans self-center md:text-3xl text-2xl font-hairline pb-px'>
       <code
-        className='print:text-3xl text-indigo-700 font-sans self-center md:text-3xl text-2xl font-hairline pb-px'
+        className='print:text-2xl text-indigo-700 font-sans self-center md:text-3xl text-2xl font-hairline pb-px'
         role='heading'
         aria-label='Software Developer'
       >
