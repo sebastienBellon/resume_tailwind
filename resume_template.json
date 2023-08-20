@@ -1,0 +1,64 @@
+{
+  "basics": {
+    "name": "John Doe",
+    "label": "Job Title",
+    "summary": "Description..."
+  },
+  "contacts": {
+    "location": {
+      "address": "123 Main St",
+      "city": "City Name"
+    },
+    "github": "https://github.com/johndoe",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "phone": "+1234567890",
+    "email": "johndoe@example.com",
+    "birthday": "01/01/1990",
+    "nationality": "Nationality"
+  },
+  "education": [
+    {
+      "institution": "University Name",
+      "studyType": "Degree Type",
+      "area": "Study Area",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Language",
+      "fluency": "Fluency Level"
+    }
+  ],
+  "side_projects": [
+    {
+      "title": "Project Title",
+      "stack": "Technology Stack",
+      "status": "Status",
+      "description": "Project Description",
+      "position": "Position",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "link": "Project Link"
+    }
+  ],
+  "programming_languages": ["Language 1", "Language 2"],
+  "frameworks": ["Framework 1", "Framework 2"],
+  "tools": ["Tool 1", "Tool 2"],
+  "strengths": ["Strength 1", "Strength 2"],
+  "work": [
+    {
+      "title": "Job Title",
+      "companyName": "Company Name",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "highlights": [
+        {
+          "title": "Highlight Title",
+          "content": "Highlight Content"
+        }
+      ]
+    }
+  ]
+}

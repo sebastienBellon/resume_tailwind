@@ -1,8 +1,25 @@
-# React + Vite
+# Resume tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description
 
-Currently, two official plugins are available:
+This project is designed to generate a resume page using Tailwind CSS, allowing users to create beautiful and professional resumes easily.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Generate a resume page with customizable sections
+- Easily modify and style the resume using Tailwind CSS utilities
+- Responsive design for optimal viewing on different devices
+- Edit a json file to update the existing properties
+## Installation
+
+1. Clone the repository
+2. Navigate to the project directory: `cd your-project`
+3. Install the dependencies: `npm install`
+4. create your `resume.json` using the template `resume_template.json`
+5. Run the project: `npm run dev`
+6. Open the generated resume page in your browser and print it as PDF.
+
+## Acknowledgements
+- I would like to thank the following repo for inspiring this project:
+- ([universal-resume]([link-to-author-1](https://github.com/WebPraktikos/universal-resume)))
+- ([my-custom-tailwind-resume](https://github.com/toreylittlefield/my-custom-tailwind-resume))
+- ([ResumeStack]([link-to-author-3](https://github.com/lucafaggianelli/resume-stack)))
