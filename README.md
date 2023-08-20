@@ -22,7 +22,8 @@ This project is designed to generate a resume page using Tailwind CSS, allowing 
 
 ## Acknowledgements
 
-- I would like to thank the following repo for inspiring this project:
+I would like to thank the following repo for inspiring this project:
+
 - [universal_resume](https://github.com/WebPraktikos/universal-resume)
 - [my-custom-tailwind-resume](https://github.com/toreylittlefield/my-custom-tailwind-resume)
 - [resume-stack](https://github.com/lucafaggianelli/resume-stack)
